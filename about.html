@@ -4,13 +4,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Eric Zhang">
+    <meta name="author" content="Eric">
     <meta name="description" content="This page is the about me page">
 
     <title>About me</title>
 
     <link rel="icon" href="cat.jpg" type="image/x-con">
-    <link rel="styelsheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 
 <body>
@@ -28,22 +28,40 @@
     <br>
 
     <table>
-        <tr>
-            <td> </td>
-            <td>Monday</td>
-            <td>Tuesday</td>
-            <td>Wednesday</td>
-            <td>Thursday</td>
-            <td>Friday</td>
-        </tr>
-        <tr>
-            <td>
-                <time datetime="08:00"></time>
-            </td>
-            <td> </td>
-            <td>Math</td>
-                    
-        </tr>
+        <thead>
+            <tr>
+                <th colspan="6" scope="col">Day</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> </td>
+                <td>Monday</td>
+                <td>Tuesday</td>
+                <td>Wednesday</td>
+                <td>Thursday</td>
+                <td>Friday</td>
+            </tr>
+            <tr>
+                <th scope="row"><time datetime="08:00">08:00</time></th>
+                <td>&nbsp;</td>
+                <td rowspan="2">Math</td>
+                <td>&nbsp;</td>
+                <td rowspan="2">Math</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th scope="row"><time datetime="08:30">08:30</time></th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">Term 1</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 
