@@ -63,6 +63,48 @@
             </tr>
         </tfoot>
     </table>
+    <form>
+        <fieldset>
+            <legend>Test Lengend</legend>
+            <p>
+                <input type="radio" name="test-input" id="1" value="1" required>
+                <label for="1">1</label>
+            </p>
+            <p>
+                <input type="radio" name="test-input" id="2" value="2">
+                <label for="2">2</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Do you have pets?</legend>
+            <p>
+                <input type="checkbox" name="pets" id="dog" value="dog">
+                <label for="dog">Dog</label>
+            </p>
+            <p>
+                <input type="checkbox" name="pets" id="cat" value="cat">
+                <label for="cat">Cat</label>
+            </p>
+            <p>
+                <input type="checkbox" name="pets" id="fish" value="fish">
+                <label for="fish">Fish</label>
+            </p>
+            <p>
+                <input type="checkbox" name="pets" id="other-pet" value="other-pet">
+                <label for="other-pet">Other</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Send Me a Message</legend>
+            <label for="message">Your Message: </label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
 </body>
 
 </html>
