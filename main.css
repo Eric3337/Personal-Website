@@ -33,3 +33,15 @@ table, tr, td, caption {
 .form {
   color: limegreen;
 }
+
+h1, h2 {
+  color: gold;
+}
+
+p {
+  color: brown;
+}
+
+.legend-form {
+  color: blue;
+}
