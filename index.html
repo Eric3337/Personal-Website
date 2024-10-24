@@ -13,8 +13,6 @@
 
 <body>
   <header>
-
-
     <h1>Welcome to the my website!</h1>
     <p title="Welcome!">
       Please feel free to explore around!
@@ -63,31 +61,31 @@
     <hr>
 
     <article id="contact">
-      <h2>Contact me</h2>
-      <p>I'd really like to hear from you!</p>
+      <h2 class="form">Contact me</h2>
+      <p class="form">I'd really like to hear from you!</p>
 
       <form action="https://httpbin.org/get" method="get">
-        <p>
+        <p class="form">
           <label for="firstName">First Name:</label>
           <input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="on" required>
           <!--there is also autofocus-->
         </p>
-        <p>
+        <p class="form">
           <label for="lastName">Last Name:</label>
           <input type="text" name="lastName" id="lastName" placeholder="Smith" autocomplete="on" required>
           <!--there is also autofocus-->
         </p>
-        <p>
+        <p class="form">
           <label for="password">Password</label>
           <input type="password" name="password" id="password" placeholder="password" required>
           <!--there is also autofocus-->
         </p>
-        <p>
+        <p class="form">
           <label for="phone">Phone:</label>
           <input type="tel" name="phone" id="phone" placeholder="1234567890" pattern="[0-9]{10}" required>
           <!--there is also autofocus-->
         </p>
-        <p>
+        <p class="form">
           <label for="year">Academic Year (if applicable):</label>
           <input type="number" name="year" id="year" min="1" max="6" step="1" value="1">
           <!--there is also autofocus-->
