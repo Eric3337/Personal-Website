@@ -1,6 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
   width: 100%;
+}
+
+/* Using vw will create a horizontal scroll when vertical content exceeds the
+   view of the page. Using % instead*/
+/* body {
+  width: 100vw;
+} */
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  color: brown;
+  width: 50vw;
+  background-color: skyblue;
 }
 
 /* a {
@@ -34,20 +56,13 @@ caption {
   font-size: 16px;
 } */
 
-.form {
-  color: limegreen;
-}
 
-h1, h2 {
+h1 {
   color: gold;
-}
-
-p {
-  color: brown;
-}
-
-p {
-  color: purple;
+  border: 2px dashed blue;
+  font-size: 3rem;
+  padding: 0.5rem;
+  width: 50%;
 }
 
 .legend-form {
