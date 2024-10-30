@@ -68,3 +68,18 @@ h1 {
 .legend-form {
   color: blue;
 }
+
+#intro_cat {
+  margin: 0.5rem, 80px;
+}
+
+.circle {
+  margin: 3rem auto;
+  background-color: gold;
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 25px;
+  outline: 2px solid red;
+  outline-offset: 0.25rem;
+}
