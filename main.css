@@ -7,6 +7,7 @@
 html {
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 /* Using vw will create a horizontal scroll when vertical content exceeds the
@@ -68,10 +69,15 @@ h3 {
   color: blue;
 }
 
+#present_tasks {
+  position: relative;
+}
+
 #intro_cat {
   display: block;
   width: 25%;
   margin: auto;
+  position: sticky;
 }
 
 .circle {
