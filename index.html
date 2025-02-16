@@ -7,7 +7,7 @@
   <meta name="author" content="Eric">
   <meta name="description" content="This is a personal website project for learning full stack development">
   <title>My First Web Page</title>
-  <link rel="icon" href="cat.gif" type="image/x-icon">
+  <link rel="icon" href="cat.jpg" type="image/x-icon">
   <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 
@@ -45,7 +45,8 @@
 
       <!-- note to future self when learnt javascript: make the circle into a button to switch
         between cat gifs-->
-      <div class="circle">Click me!
+      <div class="div-circle">
+        <button class="circle" onclick="changeImage()">Click me!</button>
       </div>
     </section>
 
@@ -135,6 +136,21 @@
 
     <a href="#">Back to top</a>
   </footer>
+
+  <script>
+    function changeImage() {
+      // Get the image element
+      var img = document.getElementById("intro_cat");
+
+      console.log(img.src);
+      // Change the src attribute to a new image URL
+      if (img.src == "http://127.0.0.1:5500/laptop_cat.gif") {
+        img.src = "cat.jpg";
+      } else {
+        img.src = "laptop_cat.gif";
+      }
+    }
+  </script>
 
 
 

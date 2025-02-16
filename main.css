@@ -80,6 +80,10 @@ h3 {
   position: sticky;
 }
 
+.div-circle {
+  text-align: center;
+}
+
 .circle {
 
   margin: 3rem auto;
@@ -90,9 +94,10 @@ h3 {
   border-radius: 25px;
   outline: 2px solid red;
   outline-offset: 0.25rem;
-  text-align: center;
   padding-top: 0.4rem;
+
 }
+
 
 
 
