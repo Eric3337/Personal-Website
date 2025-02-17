@@ -1,3 +1,10 @@
+:root {
+  --BLUE: #B7E0FF;
+  --YELLOW: #FFF5CD;
+  --PEACH: #FFCFB3;
+  --RED: #E78F81;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,36 +17,21 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Using vw will create a horizontal scroll when vertical content exceeds the
-   view of the page. Using % instead*/
-/* body {
-  width: 100vw;
-} */
-
 body {
   min-height: 100vh;
 }
 
-main {
-  /* background-color: aqua;
-  width: 50%; */
+a {
+  color: var(--PEACH);
 }
-
-p {
-
-}
-
-/* a {
-  color: white;
-} */
 
 a:visited {
-  color: pink;
+  color: black;
 }
 
 a:hover,
 a:active {
-  color: aquamarine;
+  color: var(--YELLOW);
 }
 
 table,
@@ -77,7 +69,6 @@ h3 {
   display: block;
   width: 25%;
   margin: auto;
-  position: sticky;
 }
 
 .div-circle {
@@ -98,29 +89,20 @@ h3 {
 
 }
 
-
-
-
-
-
 ol {
   margin-top: 0.5rem;
   list-style-type: lower-alpha;
 }
 
-/* ul {
-  margin-top: 0.5rem;
-  list-style-position: inside;
-  color: #00f;
-  line-height: 1.6;
-} */
-
 ul.intro_nav {
   list-style-type: none;
   padding-left: 0.5rem;
   text-align: center;
-  background-color: black;
+  background-color: var(--BLUE);
   margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 ul.intro_nav li {
@@ -129,7 +111,7 @@ ul.intro_nav li {
 }
 
 li a {
-  color: #fff;
+  color: var(--RED);
   text-decoration: none;
 }
 
@@ -141,12 +123,6 @@ li a:focus {
 ul li:nth-child(even) {
   color: red;
 }
-
-/* ul ::marker {
-  color: red;
-  font-family: fantasy;
-  font-size: 1rem;
-} */
 
 .block {
   width: 15vw;
@@ -170,7 +146,7 @@ ul li:nth-child(even) {
 }
 
 section {
-  background-color: bisque;
+  background-color: white;
   border: 1px solid #333;
   padding : 1rem;
   display: flow-root;

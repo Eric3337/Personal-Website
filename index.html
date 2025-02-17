@@ -7,39 +7,32 @@
   <meta name="author" content="Eric">
   <meta name="description" content="This is a personal website project for learning full stack development">
   <title>My First Web Page</title>
-  <link rel="icon" href="cat.jpg" type="image/x-icon">
+  <link rel="icon" href="images/cat.jpg" type="image/x-icon">
   <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 
 <body>
   <header>
-    <h1>Welcome to the my website!</h1>
-    <p title="Welcome!">
-      Please feel free to explore around!
-    </p>
-
     <nav aria-label="primary-navigation">
       <ul class="intro_nav">
-        <li><a href="#introduction">About me</a></li>
-        <li><a href="#present_tasks">What I am working on right now</a></li>
-        <li>
-          <a href="#contact">Contact me</a>
-        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="data/Resume - Eric Zhang.pdf" target="_blank">Resume</a></li>
+        <li><a href="#contact">Contact me</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section id="introduction">
-      <h2><ins><a href="about.html">About me</a></ins></h2>
       <p>
-        My name is Eric Zhang and I am a <em>second year at the University of British Columbia student
-        </em>. I am currently studying <strong>Computer
-          Science</strong>, and I am <em>excited</em> to learn more about coding!
+        Hi, I'm Eric Zhang and I am a second year at the University of British Columbia student. I am currently 
+        studying Computer Science, and I am excited to learn more about coding!
         <br>
       </p>
 
-      <img id="intro_cat" src="laptop_cat.gif" alt="Coding cat gif" title="I love cats! :D">
+      <img id="intro_cat" src="images/laptop_cat.gif" alt="Coding cat gif" title="I love cats! :D">
       <!--width="220" height="274"-->
       <!-- <a href="cat.jpg" download>Cat!</a> -->
 
@@ -50,7 +43,7 @@
       </div>
     </section>
 
-    <section id="present_tasks">
+    <section id="projects">
       <h3>What I am working on right now</h3>
       <p>I am currently studying data structures and algorithm, as well as software architecture and operating systems.
       </p>
@@ -90,18 +83,8 @@
           <!--there is also autofocus-->
         </p>
         <p class="form">
-          <label for="lastName">Last Name:</label>
-          <input type="text" name="lastName" id="lastName" placeholder="Smith" autocomplete="on" required>
-          <!--there is also autofocus-->
-        </p>
-        <p class="form">
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" placeholder="password" required>
-          <!--there is also autofocus-->
-        </p>
-        <p class="form">
-          <label for="phone">Phone:</label>
-          <input type="tel" name="phone" id="phone" placeholder="1234567890" pattern="[0-9]{10}" required>
+          <label for="Email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="JohnSmith@email.com" required>
           <!--there is also autofocus-->
         </p>
         <p class="form">
@@ -145,9 +128,9 @@
       console.log(img.src);
       // Change the src attribute to a new image URL
       if (img.src == "http://127.0.0.1:5500/laptop_cat.gif") {
-        img.src = "cat.jpg";
+        img.src = "images/cat.jpg";
       } else {
-        img.src = "laptop_cat.gif";
+        img.src = "images/laptop_cat.gif";
       }
     }
   </script>
